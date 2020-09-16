@@ -12,6 +12,7 @@ void lightRead(){
 }
 
 void lightPrint(int time){
+    Serial.print("                   ");
     Serial.println(analogRead(A4));
     Serial.print(analogRead(A0));
     Serial.print(" / ");
@@ -23,7 +24,7 @@ void lightPrint(int time){
     Serial.print(" / ");
     Serial.println(analogRead(A7));
     Serial.print(analogRead(A1));
-    Serial.print(" / ");
+    Serial.print("                             ");
     Serial.println(analogRead(A6));
     Serial.println("---------------------");
     delay(time);
