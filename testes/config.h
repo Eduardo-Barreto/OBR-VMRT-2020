@@ -12,7 +12,7 @@ void lightRead(){
 }
 
 void lightPrint(int delay){
-    Serial.println(analogRead("Front: " + String(A4)));
+    Serial.println(analogRead("Front: " + String(analogRead(A4))));
     Serial.println("PID: " + String(analogRead(A0)) + String(analogRead(A2)) + String(analogRead(A3)) + String(analogRead(A5)) + String(analogRead(A7)));
     Serial.println("Green: " + String(analogRead(A1)) + String(analogRead(A6)));
     delay(delay);
