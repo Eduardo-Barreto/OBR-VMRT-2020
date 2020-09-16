@@ -2,27 +2,38 @@
 
 //Variaveis dos motores
 
-int IN1 = 8;
-int IN2 = 9;
-int IN3 = 10;
-int IN4 = 11;
+#define rightDir 30;
+#define rightStep 28;
+#define rightEnable 26;
 
-void setup()
-{
-  pinMode(IN1, OUTPUT);
-  pinMode(IN2, OUTPUT);
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
+#define leftDir 36;
+#define leftStep 34;
+#define leftEnable 32;
 
+bool direction = 1;
+
+void setup(){
+  pinMode(rightDir, OUTPUT);
+  pinMode(rightStep, OUTPUT);
+  pinMode(rightEnable, OUTPUT);
+  pinMode(leftDir, OUTPUT);
+  pinMode(leftStep, OUTPUT);
+  pinMode(leftEnable, OUTPUT);
   delay(1000);
 }
-void loop()
-{
- 
-  analogWrite(IN1, 160);
-  analogWrite(IN2, 0);
-  analogWrite(IN3, 0);
-  analogWrite(IN4, 160);
-  delay(1000); 
+void loop(){
+  digitalWrite(rightDir, !direction);
+  digitalWrite(leftDir, !direction);
 
+  for (int i = 0; i < 200; i++)  {
+    digitalWrite(rightStep, HIGH);
+    digitalWrite(leftStep, HIGH);
+    delay(50);
+    digitalWrite(rightStep, LOW);
+    digitalWrite(leftStep, LOW);
+  }
+
+  direction = !direction;
+
+  delay(1000); 
 }
