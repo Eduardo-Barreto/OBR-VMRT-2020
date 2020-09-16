@@ -15,13 +15,13 @@ void lightPrint(int time){
     Serial.print("                   ");
     Serial.println(analogRead(A4));
     Serial.print(analogRead(A0));
-    Serial.print(" / ");
+    Serial.print(" | ");
     Serial.print(analogRead(A2));
-    Serial.print(" / ");
+    Serial.print(" | ");
     Serial.print(analogRead(A3));
-    Serial.print(" / ");
+    Serial.print(" | ");
     Serial.print(analogRead(A5));
-    Serial.print(" / ");
+    Serial.print(" | ");
     Serial.println(analogRead(A7));
     Serial.print(analogRead(A1));
     Serial.print("                             ");
