@@ -11,9 +11,9 @@ void lightRead(){
     int rightGreen = analogRead(A6);
 }
 
-void lightPrint(int delay){
+void lightPrint(int time){
     Serial.println(analogRead("Front: " + analogRead(A4)));
     Serial.println("PID: " + analogRead(A0) + analogRead(A2) + analogRead(A3) + analogRead(A5) + analogRead(A7));
     Serial.println("Green: " + analogRead(A1) + analogRead(A6));
-    delay(delay);
+    delay(time);
 }
