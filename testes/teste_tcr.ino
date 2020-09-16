@@ -7,5 +7,5 @@ void setup(){
 }
 
 void loop(){
-  lightPrint(1000);  
+  lightPrint(1000);
 }
