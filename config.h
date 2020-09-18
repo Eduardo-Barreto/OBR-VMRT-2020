@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <Ultrassonic.h>
+#include <Ultrasonic.h>
 
 int reflecLightFrente = A4;
 int reflecLight1 = A0;
@@ -10,16 +10,16 @@ int reflecLight5 = A7;
 int leftGreen = A1;
 int rightGreen = A6;
 
-void connectLightSensors(){
-    pinMode(reflecLightFrente, INPUT);
-    pinMode(reflecLight1, INPUT);
-    pinMode(reflecLight2, INPUT);
-    pinMode(reflecLight3, INPUT);
-    pinMode(reflecLight4, INPUT);
-    pinMode(reflecLight5, INPUT);
-    pinMode(leftGreen, INPUT);
-    pinMode(rightGreen, INPUT);
-}
+
+pinMode(reflecLightFrente, INPUT);
+pinMode(reflecLight1, INPUT);
+pinMode(reflecLight2, INPUT);
+pinMode(reflecLight3, INPUT);
+pinMode(reflecLight4, INPUT);
+pinMode(reflecLight5, INPUT);
+pinMode(leftGreen, INPUT);
+pinMode(rightGreen, INPUT);
+
 
 #define frontTrigger 5
 #define frontEcho 4
