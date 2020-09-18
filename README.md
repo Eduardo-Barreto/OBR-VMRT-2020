@@ -1,2 +1,8 @@
 # OBR-VMRT-2020
-Programação da SESI VMRT para a modalidade Apresentação da OBR de 2020
+SESI VMRT code for the OBR 2020
+
+# The Robot
+<p align="center"><img src="images/robot.gif" /></p>
+
+# Sensors
+![Sensors](/images/ports.png)
