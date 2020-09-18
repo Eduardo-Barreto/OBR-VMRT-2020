@@ -4,5 +4,5 @@ SESI VMRT code for the OBR 2020
 # The Robot
 <p align="center"><img src="images/robot.gif" /></p>
 
-# Sensors
+# Motors and sensors ports
 ![Sensors](/images/ports.png)
