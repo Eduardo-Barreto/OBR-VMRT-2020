@@ -11,9 +11,21 @@ void lightRead(){
     int rightGreen = analogRead(A6);
 }
 
-void lightPrint(int delay){
-    Serial.println(analogRead("Front: " + analogRead(A4)));
-    Serial.println("PID: " + analogRead(A0) + analogRead(A2) + analogRead(A3) + analogRead(A5) + analogRead(A7));
-    Serial.println("Green: " + analogRead(A1) + analogRead(A6));
-    delay(delay);
+void lightPrint(int time){
+    Serial.print("                   ");
+    Serial.println(analogRead(A4));
+    Serial.print(analogRead(A0));
+    Serial.print(" | ");
+    Serial.print(analogRead(A2));
+    Serial.print(" | ");
+    Serial.print(analogRead(A3));
+    Serial.print(" | ");
+    Serial.print(analogRead(A5));
+    Serial.print(" | ");
+    Serial.println(analogRead(A7));
+    Serial.print(analogRead(A1));
+    Serial.print("                             ");
+    Serial.println(analogRead(A6));
+    Serial.println("---------------------");
+    delay(time);
 }
