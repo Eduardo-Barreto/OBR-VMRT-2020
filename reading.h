@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include config.h
 
 void lightRead(){
     int reflecLightFrente = analogRead(A4);
