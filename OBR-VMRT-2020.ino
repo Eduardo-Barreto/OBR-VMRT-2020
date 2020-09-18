@@ -1,6 +1,7 @@
 #include <Arduino.h>
+#include <Ultrasonic.h>
 
-#include config.h
+#include "config.h"
 
 
 void setup(){
