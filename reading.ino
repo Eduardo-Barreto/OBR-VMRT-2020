@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "config.h"
 
+/* #region  Light Sensors */
 void lightRead(){
     reflecLightFrente = analogRead(A4);
     reflecLight1 = analogRead(A0);
@@ -30,3 +30,4 @@ void lightPrint(int time){
     Serial.println("---------------------");
     delay(time);
 }
+/* #endregion */

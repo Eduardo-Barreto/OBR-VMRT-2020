@@ -1,5 +1,3 @@
- #include "config.h"
-
 int KP = 0;
 int gain = 0;
 int error = 0;

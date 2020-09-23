@@ -1,10 +1,10 @@
 #include <Arduino.h>
 #include <Ultrasonic.h>
 
-#include "config.h"
-
-
 void setup(){
+  turnOnLightSensors();
+  turnOnMotors();
+  turnOnUltraSensors();
   Serial.begin(9600);
   delay(2000);
 
