@@ -1,12 +1,14 @@
+# To install: just copy all the text of this file, press Ctrl+" and paste it into the integrated terminal that will appear, hit enter and you're done :)
+
 # Arduino
 code --install-extension vsciot-vscode.vscode-arduino
 
-# Ajudar no editor
+# Helps in editor
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension maptz.regionfolder
 code --install-extension natqe.reload
 
-# Tema de cores
+# color themes and icons
 code --install-extension PKief.material-icon-theme
 code --install-extension jolaleye.horizon-theme-vscode 
 
