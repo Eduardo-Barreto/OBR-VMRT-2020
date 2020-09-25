@@ -51,6 +51,8 @@ int leftDelay = 0;
 int atualRightSteps = 0;
 int atualLeftSteps = 0;
 
+int time = 0;
+
 void setup(){
   pinMode(reflectedLightFrente, INPUT);
   pinMode(reflectedLight1, INPUT);
@@ -97,10 +99,12 @@ void move(int rightVelocity, int leftVelocity, int rightSteps, int leftSteps, bo
     rightVelocity = map(rightVelocity, 1, 100, 10000, 1000);
     leftVelocity = map(leftVelocity, 1, 100, 10000, 1000);
 
+    time = micros();
+
     digitalWrite(leftDir, leftDirection);
     digitalWrite(rightDir, rightDirection);
 
-    if (micros() >= micros() + rightVelocity)
+    if (time >= time + rightVelocity)
     {
         if (atualRightSteps <= rightSteps){
             digitalWrite(rightStep, HIGH);
@@ -110,7 +114,7 @@ void move(int rightVelocity, int leftVelocity, int rightSteps, int leftSteps, bo
         
     }
 
-    if (micros() >= micros() + leftVelocity)
+    if (time >= time + leftVelocity)
     {
         if (atualLeftSteps <= leftSteps){
             digitalWrite(leftStep, HIGH);
