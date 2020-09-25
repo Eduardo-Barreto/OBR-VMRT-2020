@@ -10,5 +10,4 @@ SESI VMRT code for the OBR 2020
 # Presentation Video
 this video below was used for the Brazilian Robotics Olympics, in the Virtual Practical Mode of 2020
 
-https://www.youtube.com/embed/gncmIylY5fE
-
+[![OBR 2020 VMRT](http://img.youtube.com/vi/gncmIylY5fE/0.jpg)](http://www.youtube.com/watch?v=gncmIylY5fE "OBR 2020 VMRT")
