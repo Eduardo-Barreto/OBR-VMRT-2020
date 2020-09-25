@@ -104,7 +104,8 @@ void move(int rightVelocity, int leftVelocity, int rightSteps, int leftSteps, bo
     digitalWrite(leftDir, leftDirection);
     digitalWrite(rightDir, rightDirection);
 
-    if (time >= time + rightVelocity)
+    while()
+    if (micros() >= time + rightVelocity)
     {
         if (atualRightSteps <= rightSteps){
             digitalWrite(rightStep, HIGH);
@@ -114,7 +115,7 @@ void move(int rightVelocity, int leftVelocity, int rightSteps, int leftSteps, bo
         
     }
 
-    if (time >= time + leftVelocity)
+    if (micros() >= time + leftVelocity)
     {
         if (atualLeftSteps <= leftSteps){
             digitalWrite(leftStep, HIGH);
