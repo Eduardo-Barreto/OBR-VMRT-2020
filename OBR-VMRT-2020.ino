@@ -1,12 +1,12 @@
 #include <Arduino.h>
 
-#define rightDir 30;
-#define rightStep 28;
-#define rightEnable 26;
+#define rightDir 30
+#define rightStep 28
+#define rightEnable 26
 
-#define leftDir 36;
-#define leftStep 34;
-#define leftEnable 32;
+#define leftDir 36
+#define leftStep 34
+#define leftEnable 32
 
 int reflectedLightFrente = A4;
 int reflectedLight1 = A0;
@@ -51,10 +51,10 @@ void loop(){
         digitalWrite(rightDir, 1);
         digitalWrite(rightStep, HIGH);
         digitalWrite(leftStep, HIGH);
-        delay(50)
+        delay(50);
         digitalWrite(rightStep, LOW);
         digitalWrite(leftStep, LOW);
-        delay(50)
+        delay(50);
     }
     if (reflectedLight4 < 60)
     {
@@ -62,18 +62,18 @@ void loop(){
         digitalWrite(rightDir, 0);
         digitalWrite(rightStep, HIGH);
         digitalWrite(leftStep, HIGH);
-        delay(50)
+        delay(50);
         digitalWrite(rightStep, LOW);
         digitalWrite(leftStep, LOW);
-        delay(50)
+        delay(50);
     }
     else{digitalWrite(leftDir, 1);
         digitalWrite(rightDir, 1);
         digitalWrite(rightStep, HIGH);
         digitalWrite(leftStep, HIGH);
-        delay(50)
+        delay(50);
         digitalWrite(rightStep, LOW);
         digitalWrite(leftStep, LOW);
-        delay(50)}
+        delay(50);}
     
 }
